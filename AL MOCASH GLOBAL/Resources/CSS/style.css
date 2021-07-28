@@ -1,0 +1,544 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    background-color: #fff;
+    color: #5c5c5c;
+    font-family: 'lato' ,'arial' , sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+    text-rendering: optimizeLegibility;
+}
+.row{
+    max-width: 1140px;
+    margin: 0 auto;   
+}
+header{
+    background-image: url(Images/Pal%2030.jpg);
+  
+    background-size: cover;
+    background-position: center;
+    height: 80vh;  
+    overflow: hidden;
+}
+.stic{
+    background-color: #e0dbdb;
+    
+}
+.text1{
+    position: relative;
+    left: 900px;
+    top: 400px;
+    
+}
+.sli{
+    font-size: 40px;
+    animation-name: tex;
+    animation-duration: 2s;
+}
+.sli1{
+    animation-name: tex1;
+    animation-duration: 2s;
+}
+@keyframes tex{
+    from{
+        transform: translateY(-300px);
+    }
+    to{
+        transform: translateY(0px);
+    }
+}
+@keyframes tex1{
+    from{
+        transform: translatex(300px);
+    }
+    to{
+        transform: translateY(0px);
+    }
+}
+
+.sticky{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #e0dbdb;
+    z-index: 999;
+    box-shadow: 0 2px 2px #898888;
+    transition: 1s;
+    
+}
+.main{
+    max-width: 1140px;
+    margin: 0 auto;
+    
+    
+    
+}
+.main img{
+    height: 80px;
+    width: 80px;
+    float: left;
+    margin-top: 20px;
+}
+.main ul{
+    float: right;
+    
+    list-style: none;
+    margin-top:60px;
+    
+    
+}
+.main ul li{
+      display: inline-block;
+    margin-left: 40px;
+    
+    
+    
+}
+.main ul li a:link,
+.main ul li a:visited{
+    padding:15px 0;
+    text-decoration: none;
+    color: white;
+    font-size: 17px;
+    text-transform: uppercase;
+     border-bottom: 2px solid transparent;
+    transition: border-bottom 0.2s;
+}
+.main ul li a:hover,
+.main ul li a:active{
+   
+    border-bottom: 2px solid #1570be;
+    color: #000000;
+}
+.zoom:link,
+.zoom:visited{
+   overflow: hidden;
+}
+.zoom img{
+    transition: 1s;
+}
+.zoom img:hover,
+.zoom img:active{
+    transform: scale(1.2);
+}
+
+.container{
+    
+    width: 1140px;
+    height: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+/* 
+.slides{
+    overflow: hidden;
+}
+.slides img{
+    display: none;
+}
+.slides img.active{
+    display: inline-block;
+}
+.container img{
+
+} */
+/*.slider-inner{
+    position: relative;
+    overflow: hidden;
+    float: left;
+    padding: 3px;
+    border: #666 solid 1px;
+}
+.slider-inner img{
+    display: none;
+    width: 900px;
+    height: 400px;
+    
+}
+
+.slider-inner img.active{
+    display: inline-block;
+} */
+.prev ,.next{
+    float: left;
+    margin-top: 130px;
+    cursor: pointer; 
+    opacity: 0.8
+}
+.prev{
+    margin-right: 30px;
+}
+.next{
+    margin-left: 40px;
+}
+
+.container{
+    
+}
+.slider-outer{
+  
+   position: relative;
+    left: 20%;
+    top: 100px;
+    display: block;
+}
+.slider-inner{
+    overflow: hidden;
+    float: left;
+}
+.slide p{
+    float: left;
+    position: relative;
+    top: 100px;
+    margin: 40px;
+    font-weight: bold;
+    color: white;
+    transform: translateY(-200px);
+    animation-name: slidepara;
+    animation-duration: 0.8s;
+    animation-fill-mode: forwards;
+    
+}
+.slide{
+    visibility: hidden;
+}
+.active{
+    visibility: visible;
+}
+.slide1{
+    visibility: hidden;
+    
+}
+@keyframes slidepara{
+    from{
+        transform: translateY(-200px);
+    }
+    to{
+        transform: translateY(0px);
+    }
+}
+.slide img{
+    width: 300px;
+    height: 300px;
+    float: left;
+    display: block;
+    animation-name: slideimg;
+    animation-duration: 0.8s;
+    animation-fill-mode: forwards;
+    
+    transform: translateX(300px)
+        
+}
+@keyframes slideimg{
+    from{
+        transform: translateX(300px)
+    }
+    to{
+        transform: translateX(0px)
+    }
+}
+
+
+.slideimg{
+    float: right;
+    border-radius: 50%;
+}
+
+.tex{
+    padding: 50px;
+    
+}
+.work{
+    margin-bottom: 100px;
+}
+.work:after{
+    display: block;
+    width: 1140px
+    border-bottom: 1px solid black;
+    
+}
+.work img{
+    width: 400px;
+    border-radius: 5%;
+    margin-left: 80px;
+    
+}
+.line1{
+    float: left;
+    border-bottom: 2px solid #bfbebe;
+    width: 45%;
+    padding-top: 10px;
+}
+.line2{
+    float: right;
+    border-bottom: 2px solid #bfbebe;
+    width: 45%;
+    padding-top: 10px;
+}
+.icon{
+    display: inline-block;
+    font-size: 40px;
+    margin-left: 43px;
+    
+}
+h1{
+    text-align: center;
+    font-weight: 200;
+    text-transform: uppercase;
+    color: #313131;
+}
+h4{
+    text-align: center;
+    font-weight: 200;
+    margin-bottom: 50px;
+    
+}
+h3{
+    color: black;
+}
+.butt {
+    width: 20%;
+    height: 20%;
+    margin-top: 10px;
+    border-radius: 50px;
+    padding: 5px;
+    background-color: #ffb225;
+    margin-left: 30%;
+    margin-bottom: 50px;
+    border: 1px solid #e29200;
+    cursor: pointer;
+}
+.jet{
+    display: inline-block;
+    margin-left: 17%;
+    font-size: 70px;
+    border-radius: 50%;
+    background-color: orange;
+    width: 70px;
+    text-align: center;
+    transform: translateY(40px);
+    transition: 1s;
+}
+
+.butt :link,
+.butt  :visited{
+    
+}
+.butt:hover,
+.butt:active{
+    background-color: #e29200;
+}
+
+.core img{
+    width: 500px;
+    border-radius: 10px;
+    margin-top: 20px;
+    transition: 1s;
+    
+    
+}
+.para{
+    line-height: 1;
+    text-align: justify;
+    margin-top: 20px;
+    font-size: 19px;
+    width: 500px;
+    margin-bottom: 30px;
+}
+.sec{
+    float: right;
+}
+.other{
+    display: inline-block;
+    border: 2px solid #959595;
+    line-height:30px;
+    border-radius: 30px;
+    margin-left: 100px;
+    
+}
+.other2{
+    display: inline-block;
+    border: 2px solid #959595;
+    line-height:30px;
+    border-radius: 30px;
+    float: right;
+    margin-right: 100px;
+    
+}
+.other2 b{
+    display: block;
+    font-weight: bold;
+    margin: 20px;
+    
+}
+.other b{
+    display: block;
+    font-weight: bold;
+    margin: 20px;
+    
+}
+.otherservice{
+     margin-bottom: 50px;
+}
+.hirediv1{
+    
+    
+    margin: 0;
+   
+    border: 1px solid black;
+    
+    border-radius: 20px;
+    overflow: hidden;
+    text-align: center;
+    
+    margin-left: 10px;
+    z-index: 10;
+    
+    
+}
+
+
+.hirediv1 img{
+    width: 400px;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 20px;
+}
+.hirediv1 b{
+    font-weight: bold;  
+}
+
+.para1{
+    margin: 10px;
+}
+.gear{
+    font-size: 100px;
+    text-align: center;
+    width: 30%;
+    margin-left: 20px;
+    height: 0px;
+    z-index: 9;
+    margin-bottom: 0px
+    
+}
+.gear i{
+    position: relative;
+    top:-50px;
+    left: 140px;
+    transition: 0.3s ;
+    
+    
+}
+.newsdiv{
+    max-width: 1200px;
+}
+.newsdiv b{
+    font-weight: bold;
+    
+}
+.butt1 {
+    border: 1px solid #d48b04;
+    padding: 10px;
+    border-radius: 30px;
+    background-color: orange;
+    cursor: pointer;
+}
+.butt1:hover{
+    background-color: #d08c0f;
+}
+.butt2{
+    border: 1px solid #d48b04;
+    padding: 10px;
+    border-radius: 30px;
+    background-color: transparent;
+    cursor: pointer;
+}
+.butt2:hover{
+    background-color: #d08c0f;
+}
+.videos{
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+.vidcol {
+    text-align: center;
+    
+    
+    
+}
+.vidcol b{
+    font-weight: bold;
+    
+    
+}
+.partners{
+    margin-bottom: 50px;
+}
+.par img{
+    width: 200px
+}
+.foot{
+    background-color: #343333;
+    height: 350px;
+    color: white;
+    
+    
+}
+
+
+.footcol{
+    height: 300px;
+    
+   
+}
+.footin b{
+    font-weight: bold;
+    color: white;
+   
+}
+.footcol ul{
+    text-decoration: none;
+    list-style: none;
+    margin: 10px
+    
+}
+.footcol ul li{
+    margin-bottom: 20px;
+}
+.footcol ul li a{
+    text-decoration: none;
+    color: white;
+}
+.footcol ul li a:hover{
+    color: white;
+    text-decoration: underline;
+}
+.footcol a{
+    color: white;
+}
+.twit{
+    font-size: 40px;
+}
+.twit:hover{
+    color: #1ebbef;
+}
+.youtube{
+    font-size: 40px;
+}
+.youtube:hover{
+    color: red;
+}
+.google{
+    font-size: 40px;
+    
+}
+.google:hover{
+    color: red;
+}

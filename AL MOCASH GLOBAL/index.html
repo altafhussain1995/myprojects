@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang='en'>
+    <head>
+        <link rel="stylesheet" type="text/css" href="vendors/CSS/normalize.css">
+        <link rel="stylesheet" type="text/css" href="vendors/CSS/Grid.css">
+        <link rel="stylesheet" type="text/css" href="Resources/CSS/style.css">
+        <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="vendors/CSS/ionicons.min.css">
+        <link rel="stylesheet" type="text/css" href="vendors/CSS/animate.css">
+        <script src="Resources/Javascript/jquery-3.3.1.min.js"></script>
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+        <script src="Resources/Javascript/script.js"></script>
+        <script src="vendors/Javascript/jquery.waypoints.min.js">
+        
+        </script>
+        <script type="text/javascript">
+        $(document).ready(function(){
+             
+            $('.core').waypoint(function(direction){
+                if(direction=="down"){
+                    $('nav').addClass('sticky');
+                    console.log("added");
+                    
+                }
+                else
+                {
+                    $('nav').removeClass('sticky');
+                }
+                
+            });
+            $('.hirediv1').waypoint(function(direction){
+                $('.ani').addClass('animated rollIn');
+            },{
+                offset:'50%'
+            });
+            
+        });
+        </script>
+        
+        
+        <title>AL MOCASH GLOBAL</title>
+    
+    </head>
+    <body>
+        <header>
+            <nav class="stic" >
+                
+                <div class="main row">
+                    <img src="Resources/CSS/Images/1.png" ref="logo">
+                    <div class="mainnav">
+                        <ul>
+                            <li><a href="#">Home</a> </li>
+                            <li><a href="#">Aboutus</a> </li>
+                            <li><a href="#">Services</a> </li>
+                            <li><a href="#">Project</a> </li>
+                            <li><a href="#">Contactus</a> </li> 
+                        </ul>
+                    
+                    </div>
+                     
+                </div>
+               
+            </nav>
+            
+            
+         <div class="container row">
+             
+             
+             <div class="text1">
+                <h3 class="sli">AL MOCASH GLOBAL</h3>
+                 <h6 class="sli1" >we are Leading Company </h6>
+             
+             
+             </div>
+             
+             
+             
+             
+             
+             
+             
+             
+             <!--  <div class="slider-outer">
+               <img src="Resources/CSS/Images/arrow-left.png" class="prev" alt="prev">
+                   <div class="slider-inner">
+                       <div class="slide ">
+                           <p class="slidep">
+                               Slider
+                           </p>
+                           <img src="Resources/CSS/Images/scania-janacon-success.jpg" class="slideimg">
+                       </div>
+                      <div class="slide1 ">
+                           <p class="slidep">
+                               Slider1
+                           </p>
+                           <img src="Resources/CSS/Images/scania-janacon-success.jpg" class="slideimg">
+                       </div>
+                       </div>
+                    <img src="Resources/CSS/Images/arrow-right.png" class="next" alt="next">
+                   </div> -->
+               </div>
+           
+      <!--   <div class="container">
+                <img src="Resources/CSS/Images/arrow-left.png" class="prev">
+                <div class="slides">
+                    <img src="Resources/CSS/Images/image1.jpg" class="active">
+                       <img src="Resources/CSS/Images/image2.jpg">
+                       <img src="Resources/CSS/Images/image3.jpg">
+                       <img src="Resources/CSS/Images/image4.jpg">
+                
+                </div>
+                <img src="Resources/CSS/Images/arrow-right.png" class="next">
+                
+                
+            
+            </div>-->
+        
+             
+        
+        </header>
+        <div class="row slide"></div>
+        <div class="row tex">
+        
+            <h2>The paramount contractor for road and telecommunication works in Malaysia.</h2>
+        </div>
+        <div class="work ">
+        <div class="col span-1-of-3 work row">
+        <img src="Resources/CSS/Images/roadmillingworks.jpg">
+        
+        
+        </div>
+         <div class="col span-1-of-3 work row">
+        <img src="Resources/CSS/Images/microtrenchingworks.jpg">
+        
+        
+        </div>
+         <div class="col span-1-of-3 work row">
+        <img src="Resources/CSS/Images/earthworks.jpg">
+        </div>
+            </div>
+        <div class="row">
+        <div class="col  line1"></div>
+        <i class="ion-ios-briefcase icon"></i>
+        <div class="col  line2"></div>
+        </div>
+        <div class="ios-briefcase"></div>
+        <section class="core row">
+            <h1 >core services</h1>
+            <h4>We provide many different types of services to our customers. Road and Telecommunication works are our two core services.</h4>
+            <div class="col row span-1-of-2 zoom">
+            <h3>Telecommunication Works and Micro Trenching Services in Malaysia</h3>
+            <img src="Resources/CSS/Images/core1.jpg">
+            <p class="para">Janacon started with road works services, and we have diversified our business into <span style="font-weight: bold">telecommunication works</span> too. One of the services includes <span style="font-weight: bold"> Micro Trenching</span>. Micro Trenching is an environmentally friendly procedure</p>
+            <button class="butt">Read</button>
+            </div>
+            <div class="sec row span-1-of-2 zoom ">
+            <h3>Telecommunication Works and Micro Trenching Services in Malaysia</h3>
+            <img src="Resources/CSS/Images/core2.jpg">
+            <p class="para">Janacon has its own expertise in road works services. We provide various road work services which include Road Milling, Road Pavement, Machinery Rental, Earth Works and Road Marking.</p>
+            <button class="butt">Read</button>
+            </div>
+        
+        </section>
+         <div class="row">
+        <div class="col  line1"></div>
+        <i class="ion-ios-briefcase icon"></i>
+        <div class="col  line2"></div>
+        </div>
+        
+        <section class="otherservice row">
+            <h1>other services</h1>
+            <h4>Within the scope of road and telecommunication works, our company also provide various types of services...</h4>
+            <div class="row col span-1-of-3  other">
+            <b>Road Milling Works</b>
+                <b>Road Milling Works</b>
+                <b>Pavement Works</b>
+                <b>Machinery Rentals</b>
+                <b>Earth Works</b>
+                <b>Road Marking</b>
+                <b>Road Marking</b>
+            </div>
+            <div class="row col span-1-of-3  other2">
+            <b>Road Milling Works</b>
+                <b>Road Milling Works</b>
+                <b>Pavement Works</b>
+                <b>Machinery Rentals</b>
+                <b>Earth Works</b>
+                <b>Road Marking</b>
+                <b>Road Marking</b>
+            </div>
+            
+        
+        
+        </section>
+         <div class="row">
+        <div class="col  line1"></div>
+        <i class="ion-thumbsup icon"></i>
+        <div class="col  line2"></div>
+        </div>
+        <section class="hiresection">
+            <div class="hire row ">
+                <h1>WHY HIRE JANACON ?</h1>
+                <h4>Janacon is your supreme choice as we have the experience, expertise and efficiency.</h4>
+                
+               
+                
+                <div class="row col span-1-of-3 hirediv1 zoom">
+                    
+                <img src="Resources/CSS/Images/roadworks1.jpg">
+                    
+                    <b class="hiretex ani">Project planning</b>
+                    <p class="para1">
+                    Once a project is received, we study, understand and plan the works in order to achieve the target and the maximum results. This is feasible as we have experienced staffs and management who are experts.</p>
+                </div>
+                <div class="row col span-1-of-3 hirediv1 zoom">
+                <img src="Resources/CSS/Images/trenching2.jpg">
+                    <b class="hiretex ani">Track Records</b>
+                    <p class="para1 ani">
+                    We have vast experience and have been in work with both the government and private sectors. We have good records in the market as we always ensure to complete all the tasks within the time frame provided. This explains why many renowned companies had sought our services.</p>
+                </div>
+                <div class="row col span-1-of-3 hirediv1 zoom">
+                <img src="Resources/CSS/Images/fastdeploy3.jpg">
+                    <b class="hiretex">Fast Deployment</b>
+                    <p class="para1">
+                   We own all types of machines. Hence, we are able to deploy it to any job sites and work is proceeded at a fast pace</p>
+                </div>
+            
+            
+            </div>
+                
+           <div class="time"></div> 
+            
+            
+            
+        
+        
+        </section>
+        <div class="row">
+        <div class="col  line1"></div>
+        <i class="ion-star icon"></i>
+        <div class="col  line2"></div>
+        </div>
+        <section class="news">
+        
+        <h1>Latest news</h1>
+            <div class="newsdiv row">
+                <div class="col span-1-of-2">
+                    <img src="Resources/CSS/Images/scania-janacon-success.jpg">
+                
+                </div>
+                <div class="col span-1-of-2">
+                    <b>Scania G460 Paves The Way for Janacon's Success</b>
+                    <p style="display:block;">Scania Southeast Asia Griffin Today is a customer magazine that is issued three times a year by Scania Southeast Asia for transport and power generation operators and professionals in the industry. SSEAGT - Issues No 4/2013</p>
+                    <input type="button" class="butt2" value="Visit Scania Website">
+                    <button class="butt1">Download Magazine</button>
+                
+                </div>
+            
+            
+            </div>
+        
+        
+        </section>
+        <div class="row">
+        <div class="col  line1"></div>
+        <i class="ion-social-youtube-outline icon"></i>
+        <div class="col  line2"></div>
+        </div>
+        <section class="videos">
+            <h1>our lastest videos</h1>
+            <h4>Janacon Trading Sdn Bhd videos from project site.</h4>
+            <div class="innervideos row">
+                <div class="col span-1-of-2 vidcol">
+                <iframe width=90% height=300 src="https://www.youtube.com/embed/HFOMzY-fVwQ"></iframe>
+                    <b>Milling of MPSJ Stadium Tracks</b>
+                    <p>Milling Works</p>
+                    
+                </div>
+                <div class="col span-1-of-2 vidcol">
+                <iframe width=90% height=300 src="https://www.youtube.com/embed/HFOMzY-fVwQ"></iframe>
+                    <b>Milling of MPSJ Stadium Tracks</b>
+                    <p>Milling Works</p>
+                    
+                </div>
+            
+            </div>
+        
+        
+        </section>
+        <div class="row">
+        <div class="col  line1"></div>
+        <i class="ion-flag icon"></i>
+        <div class="col  line2"></div>
+        </div>
+        <section class="partners">
+            <div class="partdiv row">
+                <div class="col span-1-of-6 par">
+                    <img src="Resources/CSS/Images/2.png">
+                </div>
+                <div class="col span-1-of-6 par">
+                    <img src="Resources/CSS/Images/3.png">
+                </div>
+                <div class="col span-1-of-6 par ">
+                    <img src="Resources/CSS/Images/4.png">
+                </div>
+                <div class="col span-1-of-6 par">
+                    <img src="Resources/CSS/Images/5.png">
+                </div>
+                <div class="col span-1-of-6 par ">
+                    <img src="Resources/CSS/Images/6.png">
+                </div>
+                <div class="col span-1-of-6 par">
+                    <img src="Resources/CSS/Images/7.png">
+                </div>
+                
+            </div>
+        
+        
+        </section>
+        <footer class="foot ">
+        <div class="footin row">
+            <div class="col span-1-of-4 footcol">
+                <b>REGISTERED WITH</b>
+            <img src="Resources/CSS/Images/cidb.png" style="width: 300px">
+            </div>
+            <div class="col span-1-of-4 footcol">
+                <b>CONTACT</b>
+            <ul>
+                <li class="ion-location">No. 355, 1st Floor, 
+                    2 ½ Miles, Jalan Sultan Azlan Shah,
+                    (Jalan Ipoh) 
+                    51200 Kuala Lumpur, Wilayah Persekutuan 
+                    Malaysia.</li>
+                <li class="ion-ios-telephone-outline"><a href="#">+603 4044 2262</a></li>
+                <li class="ion-ios-email-outline"><a href="#">Email Us</a></li>
+                <li class="ion-link"><a href="#">www.janacon.my</a></li>
+                </ul>
+            </div>
+            <div class="col span-1-of-4 footcol">
+                <b >SOCIAL LINKS</b><br>
+               <a href="#"> <i class="ion-social-twitter twit"></i></a>
+               <a href="#"> <i class="ion-social-youtube youtube"></i></a>
+               <a href="#"> <i class="ion-social-googleplus google"></i></a>
+            </div>
+            <div class="col span-1-of-4 footcol">
+                <b>QUICK LINKS</b>
+                <ul>
+                    <li class="ion-android-arrow-dropright"><a href="#">Home</a></li>
+                    <li class="ion-android-arrow-dropright"><a href="#">About Us</a></li>
+                    <li class="ion-android-arrow-dropright"><a href="#">Services</a></li>
+                    <li class="ion-android-arrow-dropright"><a href="#">Contact Us</a></li>
+                </ul>
+            </div>
+            
+            </div>
+        
+        
+        </footer>
+    
+    </body>
+
+
+
+</html>
